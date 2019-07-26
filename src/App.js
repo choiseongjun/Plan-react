@@ -8,21 +8,22 @@ import SignUp from './component/auth/SignUp';
 import CreateProejct from './component/projects/CreateProject'
 
 class App extends Component {
-  render(){
+  render() {
     return (
       <BrowserRouter>
         <div className="App">
-            <Navbar />
-            <Switch>
-              <Route exact path='/' component={Dashboard} />
-              <Route path='/project/:id'component={ProjectDeatils} />  
-              <Route path='/signin'  component={SignIn} />
-              <Route path='/signup' component={SignUp} />
-              <Route path='/create' component={CreateProejct} />
-            </Switch>
+          <Navbar />
+          <Switch>
+            <Route exact path='/'component={Dashboard} />
+            <Route path='/project/:id' component={ProjectDeatils} />
+            <Route path='/signin' component={SignIn} />
+            <Route path='/signup' component={SignUp} />
+            <Route path='/create' component={CreateProejct} />
+          </Switch>
         </div>
       </BrowserRouter>
     );
   }
 }
+
 export default App;
